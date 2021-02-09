@@ -10,6 +10,7 @@ export default class NavigationOne extends Component {
 
         <div className="krab1">
           <h1>Somewhere out there I was once a looker</h1>
+          {/* THis will be top navigation */}
         </div>
 
       </div>

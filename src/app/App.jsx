@@ -6,6 +6,7 @@ import {
   Switch,
 } from 'react-router-dom';
 import ContainerOne from '../mainContainer/ContainerOne';
+import ContainerTwo from '../mainContainer/ContainerTwo';
 
 
 // -----------------------------------------------------------------------------------
@@ -28,6 +29,15 @@ export default class App extends Component {
             component = { ContainerOne }
           />
 
+          <Route
+            path="/ContainerTwo/:id"
+            exact
+            // Can pass props this way
+            // render={(routerProps) => <Home {...routerProps} />}
+            // ------------------------------------------------------------
+            // can't pass prop easier syntax 
+            component = { ContainerTwo }
+          />
 
         </Switch>
 

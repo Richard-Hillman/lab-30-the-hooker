@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComponentTwo component renders ComponentTwo 1`] = `
+<DocumentFragment>
+  <figure>
+    <img />
+    <figcaption>
+      <p />
+      <p />
+    </figcaption>
+  </figure>
+</DocumentFragment>
+`;

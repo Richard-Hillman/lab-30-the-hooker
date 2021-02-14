@@ -5,8 +5,8 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import ContainerOne from '../mainContainer/ContainerOne';
-import ContainerTwo from '../mainContainer/ContainerTwo';
+import ContainerOne from '../mainContainer/listContainer/ContainerOne';
+import ContainerTwo from '../mainContainer/villagerContainer/ContainerTwo';
 
 
 // -----------------------------------------------------------------------------------

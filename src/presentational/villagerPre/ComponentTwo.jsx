@@ -5,14 +5,13 @@ import PropTypes from 'prop-types';
 // import styles from './ComponentOne.css';
 
 
-const Villager = ({ name, japaneseName, image, quote }) => {
+const Villager = ({ name, image, _id }) => {
   return ( 
     <figure>
       <img src={image} alt={name} />
       <figcaption>
         <p>{name}</p>
-        <p>{japaneseName}</p>
-        <p>{quote}</p>
+        <p>{_id}</p>
       </figcaption>
     </figure>
   );
@@ -20,9 +19,8 @@ const Villager = ({ name, japaneseName, image, quote }) => {
 
 Villager.propTypes = {
   name: PropTypes.string.isRequired,
-  japaneseName: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  quote: PropTypes.string.isRequired,
+  _id: PropTypes.string.isRequired, 
 };
 
 export default Villager;

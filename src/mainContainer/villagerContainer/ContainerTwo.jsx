@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Villager from '../presentational/ComponentTwo';
-import { findVillagerById } from '../services/ServiceTwo';
+import Villager from '../../presentational/villagerPre/ComponentTwo';
+import { findVillagerById } from '../../services/ServiceTwo';
 
 const VillagerDetails = ({ match }) => {
   const [loading, setLoading] = useState(true);

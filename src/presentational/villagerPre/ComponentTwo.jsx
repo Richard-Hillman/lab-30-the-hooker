@@ -4,23 +4,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // import styles from './ComponentOne.css';
 
-
-const Villager = ({ name, image, _id }) => {
-  return ( 
-    <figure>
-      <img src={image} alt={name} />
-      <figcaption>
-        <p>{name}</p>
-        <p>{_id}</p>
-      </figcaption>
-    </figure>
-  );
-};
+const Villager = ({ name, image }) => (
+  <figure data-testid="villager">
+    <img src={image} alt={name} />
+    <figcaption>
+      <p>{name}</p>
+    </figcaption>
+  </figure>
+);
 
 Villager.propTypes = {
   name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  _id: PropTypes.string.isRequired, 
+  image: PropTypes.string.isRequired
 };
 
 export default Villager;

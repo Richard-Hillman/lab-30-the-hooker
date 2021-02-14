@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { render, screen, waitFor, cleanup } from '@testing-library/react';
-import AllVillagers from './ContainerOne';
+import AllVillagers from './AllVillagers';
 
 describe('AllVillager Container', () => {
   afterEach(() => cleanup());

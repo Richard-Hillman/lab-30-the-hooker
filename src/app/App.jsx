@@ -1,23 +1,22 @@
 /* eslint-disable max-len */
-import React, { Component } from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
   Switch,
 } from 'react-router-dom';
-import ContainerOne from '../mainContainer/listContainer/ContainerOne';
-import ContainerTwo from '../mainContainer/villagerContainer/ContainerTwo';
+import AllVillagers from '../mainContainer/listContainer/AllVillagers';
+import VillagerDetails from '../mainContainer/villagerContainer/VillagerDetails';
 
 
 // -----------------------------------------------------------------------------------
 
-export default class App extends Component {
+export default function App() {
 
   // -----------------------------------------------------------------------------------
 
-  render() {
-    return (
-  
+  return (
+    <>
       <Router>
 
         <Switch>
@@ -26,23 +25,23 @@ export default class App extends Component {
           <Route
             path="/"
             exact
-            component = { ContainerOne }
+            component = { AllVillagers }
           />
 
           <Route
-            path="/ContainerTwo/:id"
+            path="/villagers/:_id"
             exact
             // Can pass props this way
             // render={(routerProps) => <Home {...routerProps} />}
             // ------------------------------------------------------------
             // can't pass prop easier syntax 
-            component = { ContainerTwo }
+            component = { VillagerDetails }
           />
 
         </Switch>
 
       </Router>
-
-    );
-  }
+    </>
+  );
 }
+

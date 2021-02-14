@@ -1,11 +1,11 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import ComponentTwo from './ComponentTwo';
+import Villager from './ComponentTwo';
 
 describe('ComponentTwo component', () => {
   afterEach(() => cleanup());
   it('renders ComponentTwo', () => {
-    const { asFragment } = render(<ComponentTwo />);
+    const { asFragment } = render(<Villager />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

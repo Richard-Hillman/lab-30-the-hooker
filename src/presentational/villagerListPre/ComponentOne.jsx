@@ -5,14 +5,14 @@ import Villager from '../villagerPre/ComponentTwo';
 import { Link } from 'react-router-dom';
 // import styles from './ComponentOne.css';
 
-const VillagersList = ({ villagers }) => {
+export default function VillagersList({ villagers = [] }) {
+  console.log(villagers, 'fuck u');
   const villagerElements = villagers.map((villager) => (
     <Link key={villager._id} to = {`/containerTwo/${villager._id}`} >
       <li key={villager.name}>
         <Villager
           image={villager.image}
           name={villager.name}
-          quote={villager.quote}
         />
       </li>
     </Link> 
@@ -24,10 +24,14 @@ const VillagersList = ({ villagers }) => {
     </ul>
   );
 
-};
+}
 
 VillagersList.propTypes = {
-  villagers: PropTypes.array.isRequired,
+  villagers: PropTypes.arrayOf(PropTypes.shape({
+    _id: PropTypes.string,
+    name: PropTypes.string,
+    image: PropTypes.string
+  }
+  ))
 };
 
-export default VillagersList;

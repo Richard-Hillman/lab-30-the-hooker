@@ -2,12 +2,9 @@
 
 exports[`ComponentTwo component renders ComponentTwo 1`] = `
 <DocumentFragment>
-  <figure
-    data-testid="true"
-  >
+  <figure>
     <img />
     <figcaption>
-      <p />
       <p />
       <p />
     </figcaption>

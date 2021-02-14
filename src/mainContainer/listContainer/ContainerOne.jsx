@@ -9,13 +9,12 @@ const AllVillagers = () => {
   useEffect(() => {
     findVillagers()
       .then((villagers) => {
-        setVillagers(villagers);
+        setVillagers([villagers]);
         setLoading(false);
       }); 
   }, []);
 
   if(loading) return <h1>Loading</h1>;
-  console.log(villagers);
   return <VillagersList villagers={villagers} />;
 };
 

@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 const Villager = ({ name, japaneseName, image, quote }) => {
   return ( 
-    <figure>
+    <figure data-testId>
       <img src={image} alt={name} />
       <figcaption>
         <p>{name}</p>

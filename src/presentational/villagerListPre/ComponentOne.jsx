@@ -1,10 +1,9 @@
 /* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
-import Villager from './ComponentTwo';
+import Villager from '../villagerPre/ComponentTwo';
 import { Link } from 'react-router-dom';
 // import styles from './ComponentOne.css';
-
 
 const VillagersList = ({ villagers }) => {
   const villagerElements = villagers.map((villager) => (
@@ -20,7 +19,7 @@ const VillagersList = ({ villagers }) => {
   ));
 
   return ( 
-    <ul> 
+    <ul data-testId="villagers"> 
       {villagerElements}
     </ul>
   );

@@ -2,8 +2,6 @@
 
 exports[`ComponentOne component renders  1`] = `
 <DocumentFragment>
-  <ul
-    data-testid="villagers"
-  />
+  <ul />
 </DocumentFragment>
 `;
